@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prod": "ng build --prod --base-href=\"./\""
+    "prod": "ng build --prod --base-href=\"./\"",
+    "compodoc": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s"
   },
   "private": true,
   "dependencies": {
