@@ -10,8 +10,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prod": "ng build --prod --base-href=\"./\"",
-    "compodoc": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s"
+    "compodoc": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s",
+    "material.theme": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --theme material",
+    "laravel.theme": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --theme laravel",
+    "postmark.theme": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --theme postmark",
+    "aditional": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w",
+    "custom-title-favicon": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w -n \"Documentacion\" --customFavicon ./aditional/book.ico",
+    "custom-style": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w -n \"Documentacion\" --customFavicon ./aditional/book.ico -y ./css --hideGenerator"
+    
   },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.1",
