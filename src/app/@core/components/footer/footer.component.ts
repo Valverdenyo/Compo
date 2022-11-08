@@ -7,7 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  /**
+   * Comentario inicial
+   */
   currentYear: number = new Date().getFullYear();
+  /**
+   * Comentario 1
+   * Comentario 2
+   */
+
   author = 'Anartz Mugika Ledo';
 
   sharedElements: SharedElement[] = [
@@ -37,6 +45,27 @@ export class FooterComponent {
       icon: 'fab fa-npm'
     }
   ];
-}
+  /**
+   * Hola Saludo
+   * 
+   * @returns Devuelve un Hola
+   */
+  holaMundo() {
+    return 'hola';
+  }
+
+  /**
+ * Hola Saludo personalizado
+ * @example
+ * Tenemos un nombre Juanma
+ * Tenemos un apellido Perez
+ * Mostrarnos un saludo con contenido "hola Juanma Perez" 
+  * @param nombre Nombre al que vamos a saludar
+ * @param apellido Apellido a saludar
+ * @returns Devuelve un Hola con el Nombre
+ */
+  private holaMundoPersonalizado(nombre: string, apellido: string): string {
+    return 'hola ' + nombre + ' ' + apellido;
+  }
 
 

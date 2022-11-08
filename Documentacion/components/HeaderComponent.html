@@ -19,7 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -35,7 +35,7 @@
 
 
 <ol class="breadcrumb">
-  <li>Components</li>
+  <li>Componentes</li>
   <li
   >
   HeaderComponent</li>
@@ -46,22 +46,16 @@
             <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
         </li>
         <li >
-            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-        </li>
-        <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
         </li>
         <li >
             <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
-        <li >
-            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-        </li>
 </ul>
 
 <div class="tab-content">
     <div class="tab-pane fade active in" id="c-info"><p class="comment">
-    <h3>File</h3>
+    <h3>Fichero</h3>
 </p>
 <p class="comment">
     <code>src/app/@core/components/header/header.component.ts</code>
@@ -73,7 +67,7 @@
 
 
 <section>
-    <h3>Metadata</h3>
+    <h3>Meta datos</h3>
     <table class="table table-sm table-hover metadata">
         <tbody>
 
@@ -116,12 +110,12 @@
 </section>
 
     <section>
-    <h3 id="index">Index</h3>
+    <h3 id="index">Índice</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
+                        <h6><b>Propiedades</b></h6>
                     </td>
                 </tr>
                 <tr>
@@ -152,22 +146,17 @@
 <code>constructor(config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>)</code>
                     </td>
                 </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/@core/components/header/header.component.ts:10</a></div>
-                            </td>
-                        </tr>
 
                 <tr>
                     <td class="col-md-4">
                             <div>
-                                    <b>Parameters :</b>
+                                    <b>Parámetros :</b>
                                     <table class="params">
                                         <thead>
                                             <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -200,7 +189,7 @@
     <section>
     
     <h3 id="inputs">
-        Properties
+        Propiedades
     </h3>
     <table class="table table-sm table-bordered">
         <tbody>
@@ -215,15 +204,10 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                     </td>
                 </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/@core/components/header/header.component.ts:10</a></div>
-                        </td>
-                    </tr>
 
 
         </tbody>
@@ -233,27 +217,6 @@
 </div>
 
 
-    <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigService } from &#x27;../../services/config.service&#x27;;
-import { Component } from &#x27;@angular/core&#x27;;
-
-@Component({
-  selector: &#x27;blog-header&#x27;,
-  templateUrl: &#x27;./header.component.html&#x27;,
-  styleUrls: [&#x27;./header.component.css&#x27;]
-})
-export class HeaderComponent {
-  bgUrl: string;
-  constructor(private config: ConfigService) {
-    this.config.bgVar$.subscribe( data &#x3D;&gt; {
-      console.log(&#x27;header&#x27;, data);
-      this.bgUrl &#x3D; data;
-    });
-  }
-
-}
-</code></pre>
-    </div>
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;!-- Page Header --&gt;
@@ -280,23 +243,6 @@ export class HeaderComponent {
                 <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
 
-    <div class="tab-pane fade " id="c-tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
 
     
 </div>
@@ -330,11 +276,11 @@ export class HeaderComponent {
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
-        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
     </div>
 </div>
 </div>

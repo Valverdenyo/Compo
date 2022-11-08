@@ -16,7 +16,8 @@
     "postmark.theme": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --theme postmark",
     "aditional": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w",
     "custom-title-favicon": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w -n \"Documentacion\" --customFavicon ./aditional/book.ico",
-    "custom-style": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w -n \"Documentacion\" --customFavicon ./aditional/book.ico -y ./css --hideGenerator"
+    "custom-style": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional -w -n \"Documentacion\" --customFavicon ./aditional/book.ico -y ./css --hideGenerator",
+    "tips-compodoc": "npx compodoc -p tsconfig.doc.json -d Documentacion -o -s --includes ./aditional  --includesName \"Documentacion Adicional\" -w -n \"Documentacion\" --customFavicon ./aditional/book.ico -y ./css --hideGenerator --disablePrivate --disableProtected --disableDomTree --disableSourceCode --disableLifeCycleHooks --language es-ES"
     
   },
 

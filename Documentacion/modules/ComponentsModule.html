@@ -19,7 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -34,7 +34,7 @@
 
 
 <ol class="breadcrumb">
-    <li>Modules</li>
+    <li>Módulos</li>
     <li >ComponentsModule</li>
 </ol>
 
@@ -236,9 +236,9 @@
     </div>
     <i id="fullscreen" class="icon ion-ios-resize module-graph-fullscreen-btn" aria-hidden="true"></i>
     <div class="btn-group size-buttons">
-        <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
-        <button id="reset" class="btn btn-default btn-sm">Reset</button>
-        <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+        <button id="zoom-in" class="btn btn-default btn-sm">Ampliar</button>
+        <button id="reset" class="btn btn-default btn-sm">Restablecer</button>
+        <button id="zoom-out" class="btn btn-default btn-sm">Alejar</button>
     </div>
 </div>
 <script src="../js/libs/svg-pan-zoom.min.js"></script>
@@ -248,16 +248,13 @@
     <li  class="active" >
         <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
     </li>
-    <li >
-        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-    </li>
 </ul>
 
 <div class="tab-content">
     <div class="tab-pane fade active in" id="c-info">
 
         <p class="comment">
-            <h3>File</h3>
+            <h3>Fichero</h3>
         </p>
         <p class="comment">
             <code>src/app/@core/components/components.module.ts</code>
@@ -270,7 +267,7 @@
         <div class="container-fluid module">
             <div class="row">
                 <div class="col-sm-3">
-                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank"
+                    <h3>Declaraciones<a href="https://angular.io/api/core/NgModule#declarations" target="_blank"
                             title="Official documentation about module declarations"><span class="icon ion-ios-information-circle-outline"></span></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
@@ -294,7 +291,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h3>Imports<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span
+                    <h3>Importa<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span
                                 class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
@@ -303,7 +300,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span
+                    <h3>Exporta<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span
                                 class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
@@ -333,42 +330,6 @@
     </div>
 
 
-    <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { RouterModule } from &#x27;@angular/router&#x27;;
-import { CommonModule } from &#x27;@angular/common&#x27;;
-import { NgModule } from &#x27;@angular/core&#x27;;
-import { FooterComponent } from &#x27;./footer/footer.component&#x27;;
-import { HeaderComponent } from &#x27;./header/header.component&#x27;;
-import { NavbarComponent } from &#x27;./navbar/navbar.component&#x27;;
-import { YoutubePipe } from &#x27;../pipes/youtube.pipe&#x27;;
-import { DomSecurePipe } from &#x27;../pipes/dom-secure.pipe&#x27;;
-import { SidebarModule } from &#x27;./sidebar/sidebar.module&#x27;;
-import { NotFoundComponent } from &#x27;./not-found/not-found.component&#x27;;
-const COMPONENTS &#x3D; [
-    FooterComponent,
-    HeaderComponent,
-    NavbarComponent,
-    NotFoundComponent
-];
-
-const PIPES &#x3D; [
-  YoutubePipe,
-  DomSecurePipe
-];
-@NgModule({
-  declarations: [
-    COMPONENTS,
-    PIPES
-  ],
-  imports: [ CommonModule, RouterModule, SidebarModule ],
-  exports: [
-    COMPONENTS,
-    PIPES
-  ]
-})
-export class ComponentsModule { }
-</code></pre>
-    </div>
 </div>
 
 
@@ -389,11 +350,11 @@ export class ComponentsModule { }
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> comparación de resultados "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
-        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
     </div>
 </div>
 </div>
